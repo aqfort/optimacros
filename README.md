@@ -1,5 +1,5 @@
 # Optimacros
 
-## Interview assignment 
+## Interview assignment
 
 ### The task is in PDF file
