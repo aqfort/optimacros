@@ -9,8 +9,14 @@ Command line arguments are in `settings.json`
 ```;
 "cmake.debugConfig": {
     "args": [
-        "input.txt",
+        "../input.txt",
         "\"?ad\""
     ]
 }
+```
+
+Another option from project root directory
+
+```;
+./build/mtfind input.txt "?ad"
 ```
