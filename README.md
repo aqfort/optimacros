@@ -1,6 +1,6 @@
-# Optimacros
+# Multithreaded Search System
 
-## Interview assignment
+## Searches substrings in `input.txt` using mask
 
 ### The task is in PDF file
 
