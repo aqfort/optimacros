@@ -10,7 +10,7 @@ add_subdirectory(test_runner_lib)
 
 
 
-file(GLOB SOURCE optimacros/*)
+file(GLOB SOURCE source/*)
 
 
 
