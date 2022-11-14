@@ -13,7 +13,7 @@
 
 using namespace std;
 
-int main(int argc, char **argv, char **envp)
+int main(int argc, char **argv)
 {
     try
     {
@@ -22,17 +22,17 @@ int main(int argc, char **argv, char **envp)
 
         if (argc != 3)
         {
-            throw invalid_argument("exactly 2 arguments are required: input.txt \"mask\"");
+            throw invalid_argument("Exactly 2 arguments are required: input.txt \"mask\"");
         }
 
-        string path = "../" + static_cast<string>(argv[1]);
+        string path = static_cast<string>(argv[1]);
         string_view mask_string_view(argv[2]);
 
         shared_ptr<ifstream> file_stream = make_shared<ifstream>(path);
 
         if (!file_stream->is_open())
         {
-            throw invalid_argument("can not open the file");
+            throw invalid_argument("Can not open the file");
         }
 
         auto const &result = Processor(file_stream, mask_string_view);
