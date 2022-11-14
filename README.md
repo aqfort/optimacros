@@ -4,7 +4,7 @@
 
 ### The task is in PDF file
 
-Command line argumrnts are in `settings.json`
+Command line arguments are in `settings.json`
 
 ```;
 "cmake.debugConfig": {
