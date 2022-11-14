@@ -14,6 +14,8 @@ file(GLOB SOURCE optimacros/*)
 
 
 
+find_package(Threads REQUIRED)
+
 add_executable(${PROJECT_NAME} ${SOURCE})
 
-target_link_libraries(${PROJECT_NAME} test_runner_lib)
+target_link_libraries(${PROJECT_NAME} Threads::Threads test_runner_lib)
